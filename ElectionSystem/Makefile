@@ -1,16 +1,16 @@
 # Name of the project
-PROJECT_NAME = LogicGatesEvaluator
+PROJECT_NAME = ElectionSystem
 
 # Output directory
 BUILD = build
 
 # All source code files
 SRC = main.c\
-src/logic_gates.c\
+src/election_system.c\
 
 # All test source files
-TEST_SRC = src/logic_gates.c\
-test/test_logicgates.c
+TEST_SRC = src/election_system.c\
+test/election_system_test.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
