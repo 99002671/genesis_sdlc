@@ -9,7 +9,7 @@
 
 int votesCount1=0, votesCount2=0, votesCount3=0, votesCount4=0, spoiledtvotes=0;
 
-void castVote(){
+int castVote(int a){
 int choice;
 printf("\n\n ### Please choose your Candidate ####\n\n");
 printf("\n 1. %s", CANDIDATE1);
@@ -32,25 +32,27 @@ switch(choice){
              getchar();
 }
 printf("\n thanks for vote !!");
+    return 1;
 }
 
 
 
 
-void votesCount(){
+int votesCount(int a){
 printf("\n\n ##### Voting Statics ####");
 printf("\n %s - %d ", CANDIDATE1, votesCount1);
 printf("\n %s - %d ", CANDIDATE1, votesCount2);
 printf("\n %s - %d ", CANDIDATE1, votesCount3);
 printf("\n %s - %d ", CANDIDATE1, votesCount4);
 printf("\n %s - %d ", "Spoiled Votes", spoiledtvotes);
+    return 1;
 }
 
 
 
 
 
-void getLeadingCandidate(){
+int getLeadingCandidate(int a){
     printf("\n\n  #### Leading Candiate ####\n\n");
     if(votesCount1>votesCount2 && votesCount1>votesCount3 && votesCount1 >votesCount4)
     printf("[%s]",CANDIDATE1);
@@ -62,5 +64,5 @@ void getLeadingCandidate(){
     printf("[%s]",CANDIDATE4);
     else
     printf("----- Warning !!! No-win situation----");
-
+return 0;
 }
