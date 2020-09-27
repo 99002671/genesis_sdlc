@@ -16,12 +16,12 @@ printf("\n 0. Exit");
 
 printf("\n\n Please enter your choice : ");
 scanf("%d", &choice);
-
+int a=1;
 switch(choice)
 {
-case 1: castVote();break;
-case 2: votesCount();break;
-case 3: getLeadingCandidate();break;
+case 1: castVote(a);break;
+case 2: votesCount(a);break;
+case 3: getLeadingCandidate(a);break;
 default: printf("\n Error: Invalid Choice");
 }
 }while(choice!=0);
